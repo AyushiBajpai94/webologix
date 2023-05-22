@@ -9,6 +9,7 @@ const express = require("express")
  const {connection} = require("./config/db")
 
 const {userRouter} = require("./Route/UserRoute")
+const {fileRouter}=require("./Route/FileRoute")
 
 app.get("/",(req,res)=>{
    console.log(req.cookies)
@@ -17,6 +18,7 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/api",userRouter)
+app.use("/",fileRouter)
 
 
              
@@ -30,3 +32,6 @@ app.use("/api",userRouter)
     }
     console.log("Server on 8080")
  })
+
+
+
