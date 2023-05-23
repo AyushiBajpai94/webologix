@@ -1,0 +1,15 @@
+Question 1: 
+Please provide the code for creating an API using Node.js that works with the GET method  and returns a file based on the fileID query parameter passed to the endpoint. The endpoint  should follow the format  
+localhost:8080/file/download?id={fileID} 
+Question 2: 
+Please provide the code for creating a Node.js API using Express.js and Mongoose that  works with the POST method. The API should add a document to a MongoDB database  under the collection name "personal_details". The request payload for this API is as follows: 
+Endpoint: /api/personal_details 
+Method: POST 
+Request Payload: 
+{ 
+ "name": "John Doe", 
+ "age": 25, 
+ "email": "johndoe@example.com" 
+} 
+You are required to create two separate API calls. In the first API call, you need to create a  schema structure or define the data model for the "personal_details" collection. In the  second API call, you will add the provided document to the "personal_details" collection. 
+Please provide the code for both API calls, ensuring that the MongoDB document is properly  saved. Note that you should use Mongoose methods to perform these operations and avoid  using basic MongoDB commands.
